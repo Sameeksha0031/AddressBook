@@ -13,10 +13,11 @@ public class AddressBook{
 	 	    System.out.println("Enter 1. To Add the contacts");
 	    	System.out.println("Enter 2. To Print the contacts");
 		    System.out.println("Enter 3. To Edit the contacts");
-		    System.out.println("Enter 4. To Exit");
+		    System.out.println("Enter 4. To Delete the contacts");
+		    System.out.println("Enter 5. To Exit");
 		    System.out.println("Enter your choice");
 		    selection = sc.nextInt(); 
-		}while(selection<1 || selection >4);
+		}while(selection<1 || selection >5);
 			
 		return selection;
 	}
@@ -34,12 +35,14 @@ public class AddressBook{
 		
 		         case 1 :book.add();
 		            break;
-		         case 2 :book.printlist(book.contacts);
+		         case 2 :book.printlist(book.contactlist);
 		            break;
 		         case 3 :book.edit();
 		            break;
-		        case 4: System.out.println("End");
+		         case 4: book.delete();
+		            break;
+		         case 5: System.out.println("End");
 		  }
-	   }while(choice!=4);
+	   }while(choice!=5);
 	}		
 }
