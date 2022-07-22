@@ -55,4 +55,50 @@ public class OperationOnAddressBook {
 			System.out.println(contact.toString());
 	    }	
 	}
+    
+    //To Edit Entries
+    public void edit() {
+    	 System.out.println();
+		 System.out.println("Enter the First and Last name of a Person");
+		 String fname = sc.next();
+		 String lname = sc.next();
+		 String Fname = con.getFirstName();
+		 String Lname = con.getLastName();
+		 if(fname.equalsIgnoreCase(Fname) && lname.equalsIgnoreCase(Lname)) {
+			    System.out.println("Edit First Name :");
+		    	String fName = sc.next();
+		    	con.setFirstName(fName);
+		    	
+		    	System.out.println("Edit Last Name :");
+		    	String lName = sc.next();
+		    	con.setLastName(lName);
+		    	
+		    	System.out.println("Edit Address :");
+		    	String address = sc.next();
+		    	con.setAddress(address);
+		    	
+		    	System.out.println("Edit City :");
+		    	String city = sc.next();
+		    	con.setCity(city);
+		    	
+		    	System.out.println("Edit State:");
+		    	String state = sc.next();
+		    	con.setState(state);
+		    	
+		    	System.out.println("Edit Zip Code :");
+		    	String zip = sc.next();
+		    	con.setZip(zip);
+		    	
+		    	System.out.println("Edit Phone :");
+		    	String phoneno = sc.next();
+		    	con.setPhoneNo(phoneno);
+		    	
+		    	System.out.println("Edit Email Id :");
+		    	String email = sc.next();
+		    	con.setEmail(email);
+		 }else {
+			 
+			 System.out.println("Person does not exist");
+		 }
+	 }
  }
