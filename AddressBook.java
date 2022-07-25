@@ -19,7 +19,7 @@ public class AddressBook{
 		do {
 			System.out.println();
 	 	    System.out.println("Enter 1. To Add the contacts");
-	    	System.out.println("Enter 2. To Print all contacts");
+	    	    System.out.println("Enter 2. To Print all contacts");
 		    System.out.println("Enter 3. To Edit the contacts");
 		    System.out.println("Enter 4. To Delete the contacts");
 		    System.out.println("Enter 5. To Exit");
@@ -36,9 +36,6 @@ public class AddressBook{
 		AddressBook addBookOne = new AddressBook(); 
 		AddressBook addBookTwo = new AddressBook(); 
 		AddressBook addBookThree = new AddressBook(); 
-		map.put("Sameeksha", addBookOne);
-		map.put("Ruchi", addBookTwo);
-		map.put("Krishna", addBookThree);
 		
 		OperationOnAddressBook book = new OperationOnAddressBook();
 		
