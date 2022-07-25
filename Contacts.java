@@ -5,7 +5,20 @@ public class Contacts {
 	private String firstName, lastName, address, city, state, zip, phoneNo, email ;
 	
 	public String getFirstName() {
-		return firstName;
+		return this.firstName;
+	}
+
+	public Contacts(String firstName, String lastName, String address, String city, String state, String zip,
+			String phoneNo, String email) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+		this.phoneNo = phoneNo;
+		this.email = email;
 	}
 
 	public void setFirstName(String firstName) {
@@ -13,7 +26,7 @@ public class Contacts {
 	}
 
 	public String getLastName() {
-		return lastName;
+		return this.lastName;
 	}
 
 	public void setLastName(String lastName) {
@@ -21,7 +34,7 @@ public class Contacts {
 	}
 
 	public String getAddress() {
-		return address;
+		return this.address;
 	}
 
 	public void setAddress(String address) {
@@ -29,7 +42,7 @@ public class Contacts {
 	}
 
 	public String getCity() {
-		return city;
+		return this.city;
 	}
 
 	public void setCity(String city) {
@@ -37,7 +50,7 @@ public class Contacts {
 	}
 
 	public String getState() {
-		return state;
+		return this.state;
 	}
 
 	public void setState(String state) {
@@ -45,7 +58,7 @@ public class Contacts {
 	}
 
 	public String getZip() {
-		return zip;
+		return this.zip;
 	}
 
 	public void setZip(String zip) {
@@ -53,7 +66,7 @@ public class Contacts {
 	}
 
 	public String getPhoneNo() {
-		return phoneNo;
+		return this.phoneNo;
 	}
 
 	public void setPhoneNo(String phoneNo) {
@@ -61,12 +74,13 @@ public class Contacts {
 	}
 
 	public String getEmail() {
-		return email;
+		return this.email;
 	}
 
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 
 	public String toString() {
 		return "Contacts \n"+
