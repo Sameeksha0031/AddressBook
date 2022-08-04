@@ -2,15 +2,15 @@ package com.AddressBookSystem.util;
 
 public class Contacts {
 
-	private String firstName, lastName, address, city, state, zip, phoneNo, email ;
-	
+	private String firstName, lastName;
+	public String address, city, state, zip, phoneNo, email;
+
 	public String getFirstName() {
 		return this.firstName;
 	}
 
 	public Contacts(String firstName, String lastName, String address, String city, String state, String zip,
 			String phoneNo, String email) {
-		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.address = address;
@@ -81,19 +81,11 @@ public class Contacts {
 		this.email = email;
 	}
 
-
 	public String toString() {
-		return "Contacts \n"+
-	           "-----------------------------\n"+
-	           "First Name :\t" + firstName +
-	           "\nLast Name  :\t" + lastName +
-	           "\nAddress    :\t" + address +
-	           "\nCity       :\t" + city +
-	           "\nState      :\t" + state +
-	           "\nZip        :\t" + zip +
-	           "\nPhone No   :\t" + phoneNo+
-	           "\nEmail Id   :\t" + email;
-		
+		return "Contacts \n" + "-----------------------------\n" + "First Name :\t" + firstName + "\nLast Name  :\t"
+				+ lastName + "\nAddress    :\t" + address + "\nCity       :\t" + city + "\nState      :\t" + state
+				+ "\nZip        :\t" + zip + "\nPhone No   :\t" + phoneNo + "\nEmail Id   :\t" + email;
+
 	}
 
 }
