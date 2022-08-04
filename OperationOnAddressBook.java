@@ -69,13 +69,6 @@ public class OperationOnAddressBook {
 		this.contactlist.add(contact);
 	}
 
-	/*
-	 * public void checkDuplicates() {
-	 * 
-	 * System.out.println("Enter the first name"); String fname = sc.next(); for
-	 * (Contacts list : this.contactlist) { if (fname.equals(list.getFirstName())) {
-	 * // System.out.println("it is duplicate Entry"); } else { add(); } } }
-	 */
 
 	// To find the person
 	public int indexOfPerson() {
